@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/interactive-pricing-component-main
 /.pnp
 .pnp.js
 

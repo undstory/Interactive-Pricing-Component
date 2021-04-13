@@ -1,23 +1,14 @@
-import logo from './logo.svg';
+import PricingWrapper  from './components/PricingWrapper.js'
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app__wrapper">
+      <div className="app__info">
+        <h1 className="app__title">Simple, traffic-based pricing</h1>
+        <p className="app__text">Sign-up for our 30-day trial. No credit card required.</p>
+      </div>
+      <PricingWrapper />
     </div>
   );
 }

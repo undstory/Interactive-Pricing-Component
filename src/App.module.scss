@@ -1,4 +1,4 @@
-.app__wrapper {
+.wrapper {
   max-width: 1440px;
   margin: 0 auto;
   height: 100vh;
@@ -8,14 +8,14 @@
   background-repeat: no-repeat;
 }
 
-.app__info {
+.info {
   padding: 4rem 1rem;
   background-image: url('./assets/pattern-circles.svg');
   background-position: center center;
   background-repeat: no-repeat;
 }
 
-.app__text {
+.text {
   color: hsl(225, 20%, 60%);
   font-weight: 600;
 }

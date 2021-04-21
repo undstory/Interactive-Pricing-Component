@@ -1,8 +1,0 @@
-.pricing__wrapper {
-    width: 40%;
-    height: 500px;
-    margin: 0 auto;
-    background-color: hsl(230, 100%, 99%);
-    box-shadow: -10px 10px 2rem hsl(226, 100%, 87%), 10px 10px 2rem hsl(226, 100%, 87%);
-    border-radius: 15px;
-}

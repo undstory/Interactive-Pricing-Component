@@ -1,0 +1,46 @@
+.wrapper {
+    width: 40%;
+    margin: 0 auto;
+    background-color: hsl(230, 100%, 99%);
+    box-shadow: -10px 10px 2rem hsl(226, 100%, 87%), 10px 10px 2rem hsl(226, 100%, 87%);
+    border-radius: 15px;
+    padding: 0 3rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .1rem;
+}
+
+.views {
+    color: hsl(225, 20%, 60%);
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.price {
+    font-size: 3rem;
+    font-weight: bold;
+
+    &__month {
+        font-size: 1.2rem;
+        color: hsl(225, 20%, 60%);
+        font-weight: medium;
+    }
+}
+
+// input 
+
+.range {
+    width: 100%;
+    appearance: none;
+    border-radius: 50px;
+    height: .8rem;
+    background-color: hsl(224, 65%, 95%);
+    outline: none;
+}

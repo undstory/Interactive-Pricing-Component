@@ -4,23 +4,23 @@ import styles from './PricingComponent.module.scss';
 const pricePerViewsValues = [
     {
         amount: '10K', 
-        price: '$8'
+        price: '$8.00'
     },
     {
         amount: '50K', 
-        price: '$12'
+        price: '$12.00'
     },
     {
         amount: '100K', 
-        price: '$16'
+        price: '$16.00'
     },
     {
         amount: '500K', 
-        price: '$24'
+        price: '$24.00'
     },
     {
         amount: '1M', 
-        price: '$36'
+        price: '$36.00'
     }
 ]
 
@@ -35,15 +35,14 @@ class PricingComponent extends React.Component {
         this.setState({
             activeValue: e.target.value
         })
- 
     }
 
     render() {
         return (
             <div className={styles.wrapper}>
                 <div className={styles.info}>
-                    <span className={styles.views}>100k pageviews</span>
-                    <p className={styles.price}>$16.00 <span className={styles.price__month}>/month</span></p>
+                    <span className={styles.views}>{pricePerViewsValues[this.state.activeValue].amount} pageviews</span>
+                    <p className={styles.price}>{pricePerViewsValues[this.state.activeValue].price}<span className={styles.price__month}>/month</span></p>
                 </div>
                 <input className={styles.range} id="range" value={this.state.activeValue} onChange={this.changeRange} type="range" min="0" max="4" step="1" />
                 <div className={styles.billing}>

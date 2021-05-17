@@ -45,30 +45,6 @@
     outline: none;
 }
 
-//billing 
-
-.billing {
-    text-align: right;
-    margin: 2.5rem 0;
-
-    &__period {
-        font-size: .9rem;
-        margin-bottom: .8rem;
-        padding-left: 1rem;
-        color: hsl(225, 20%, 60%);
-    }
-
-    &__discount {
-        color: hsl(15, 100%, 70%);
-        background-color: hsl(14, 92%, 95%);
-        font-size: .8rem;
-        font-weight: bold;
-        padding: .1rem .2rem;
-        border-radius: 50px;
-        margin-left: 1rem;
-    }
-}
-
 //line 
 
 .line {
@@ -96,6 +72,7 @@
    
     &__item {
         font-size: .8rem;
+        font-weight: bold;
         margin-bottom: .8rem;
         padding-left: 1rem;
     }

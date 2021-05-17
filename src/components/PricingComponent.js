@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './PricingComponent.module.scss';
+import Billing from './Billing'
 
 const pricePerViewsValues = [
     {
@@ -45,13 +46,7 @@ class PricingComponent extends React.Component {
                     <p className={styles.price}>{pricePerViewsValues[this.state.activeValue].price}<span className={styles.price__month}>/month</span></p>
                 </div>
                 <input className={styles.range} id="range" value={this.state.activeValue} onChange={this.changeRange} type="range" min="0" max="4" step="1" />
-                <div className={styles.billing}>
-                    <span className={styles.billing__period}>Monthly Billing</span>
-                    <input type="radio"/>
-                    <input type="radio"/>
-                    <span className={styles.billing__period}>Yearly Billing</span>
-                    <span className={styles.billing__discount}>25% discount</span>
-                </div>
+                <Billing />
                 <div className={styles.line}></div>
                 <div className={styles.info}>
                     <ul className={styles.info__list}>

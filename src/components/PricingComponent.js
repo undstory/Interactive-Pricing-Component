@@ -32,9 +32,22 @@ class PricingComponent extends React.Component {
         activeValue: '2'
     }
 
+  
     changeRange = (e) => {
         this.setState({
             activeValue: e.target.value
+            
+        }, function() {
+            const sliderProgress = 'hsl(174, 77%, 80%)';
+            const sliderBackground = 'hsl(224, 65%, 95%)';
+        
+            const breakpoint = `${Number(this.state.activeValue) * 25}%`;
+        
+            e.target.style.backgroundImage = 
+                `linear-gradient(90deg, 
+                ${sliderProgress} ${breakpoint}, 
+                ${sliderBackground} ${breakpoint})`;
+            console.log(this.state.activeValue)
         })
     }
 

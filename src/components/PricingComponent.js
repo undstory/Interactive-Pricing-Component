@@ -29,7 +29,8 @@ const pricePerViewsValues = [
 class PricingComponent extends React.Component {
 
     state = {
-        activeValue: '2'
+        activeValue: '2',
+        yearlyBilling: false
     }
 
   
@@ -51,6 +52,17 @@ class PricingComponent extends React.Component {
         })
     }
 
+    changeBilling = (data) => {
+     
+     if(data === true) {
+         console.log("prawda")
+     } else {
+         console.log("nieprawda")
+     }
+            
+     
+    }
+
     render() {
         return (
             <div className={styles.wrapper}>
@@ -59,7 +71,7 @@ class PricingComponent extends React.Component {
                     <p className={styles.price}>{pricePerViewsValues[this.state.activeValue].price}<span className={styles.price__month}>/month</span></p>
                 </div>
                 <input className={styles.range} id="range" value={this.state.activeValue} onChange={this.changeRange} type="range" min="0" max="4" step="1" />
-                <Billing />
+                <Billing changeBilling={this.changeBilling} />
                 <div className={styles.line}></div>
                 <div className={styles.info}>
                     <ul className={styles.info__list}>

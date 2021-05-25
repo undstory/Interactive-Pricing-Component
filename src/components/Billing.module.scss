@@ -75,3 +75,18 @@
     margin: 1rem;
 }
 
+@media all and (max-width: 1024px) {
+    .billing {
+        justify-content: center;
+    }
+}
+
+@media all and (max-width: 632px) {
+    .percent {
+       display: none;
+    }
+
+    .info {
+        margin: .5rem;
+    }
+}

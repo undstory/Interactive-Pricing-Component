@@ -34,6 +34,27 @@
     }
 }
 
+.priceMobile {
+    font-size: 2.5rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+
+    &__month {
+        font-size: 1.2rem;
+        color: hsl(225, 20%, 60%);
+        font-weight: medium;
+        margin-left: 1rem;
+    }
+}
+
+.priceMobile {
+    display: none;
+}
+
 // input 
 
 .range {
@@ -142,5 +163,42 @@
        &:hover {
            color: hsl(230, 100%, 99%);
        }
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .wrapper {
+        width: 50%;
+    }
+}
+
+
+@media all and (max-width: 1024px) {
+    .wrapper {
+        width: 60%;
+    }
+
+    .info {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .views {
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    .price {
+        display: none;
+    }
+
+    .priceMobile {
+        display: flex;
+    }
+}
+
+@media all and (max-width: 632px) {
+    .wrapper {
+        width: 80%;
     }
 }

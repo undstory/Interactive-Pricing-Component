@@ -81,6 +81,9 @@ class PricingComponent extends React.Component {
                     <span className={styles.price__month}>/month</span></p>
                 </div>
                 <input className={styles.range} id="range" value={activeValue} onChange={this.changeRange} type="range" min="0" max="4" step="1" />
+                <p className={styles.priceMobile}>
+                        ${yearlyBilling ?  this.discount(activeValue) : (pricePerViewsValues[activeValue].price)}
+                    <span className={styles.priceMobile__month}>/month</span></p>
                 <Billing changeBilling={this.changeBilling} />
                 <div className={styles.line}></div>
                 <div className={styles.info}>

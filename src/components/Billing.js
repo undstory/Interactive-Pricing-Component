@@ -24,7 +24,7 @@ class Billing extends Component {
                  <span className={styles.slider}></span>
              </label>
             <span for="yearly" className={styles.info}>Yearly Billing</span>
-            <span className={styles.discount}>25% discount</span>
+            <div className={styles.discount}>25% <span className={styles.percent}>discount</span></div>
          </div>
         )
     }
